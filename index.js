@@ -49,7 +49,7 @@ async function main() {
 
   const pdfBytes = await pdfDoc.save()
 
-  fs.writeFileSync('d:\\teste.pdf', pdfBytes)
+  return pdfBytes
 }
 
-main()
+module.exports = {main}
